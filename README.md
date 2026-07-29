@@ -1,66 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 Laravel Inertia Quasar — Bộ Khởi Động Dự Án Full-Stack
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Giới Thiệu
 
-## About Laravel
+Laravel Inertia Quasar là template khởi đầu (starter kit) kết hợp ba công nghệ mạnh mẽ: **Laravel** (backend PHP), **Inertia.js** (cầu nối server–client) và **Quasar Framework** (UI Vue.js). Bộ template này giúp đội ngũ Flash Dev Team khởi tạo dự án web hiện đại nhanh chóng, với đầy đủ cấu trúc đã được cài đặt và cấu hình sẵn.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Mục Đích Sử Dụng
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Đây là **boilerplate nội bộ** dùng để:
+- Khởi tạo nhanh các dự án web SPA (Single Page Application)
+- Chuẩn hóa cấu trúc dự án trong tổ chức Flash Dev Team
+- Tiết kiệm thời gian cài đặt ban đầu cho mỗi dự án mới
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Tính Năng Có Sẵn
 
-## Learning Laravel
+### 🏗️ Cấu Trúc Đã Tích Hợp
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- 🔐 **Xác thực người dùng**: Đăng ký, đăng nhập, quản lý phiên (session)
+- 👥 **Phân quyền người dùng**: Phân tách quyền Admin và User cơ bản
+- 📋 **Giao diện Admin**: Panel quản trị với layout Quasar hoàn chỉnh
+- 📱 **Responsive**: Tương thích đầy đủ với mọi kích thước màn hình
+- 🔄 **Realtime Ready**: Tích hợp sẵn Pusher để mở rộng tính năng realtime
+- 📦 **Queue & Schedule**: Cấu hình hàng đợi và lịch trình tác vụ nền
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### ⚙️ Cấu Hình Sẵn
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Kết nối database MySQL
+- Môi trường phát triển và production
+- Build frontend tối ưu với Quasar CLI
+- Tailwind CSS cho tùy chỉnh giao diện linh hoạt
 
-## Laravel Sponsors
+## Công Nghệ Sử Dụng
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+| Thành phần | Công nghệ |
+|---|---|
+| Backend | PHP / Laravel 10 |
+| Frontend | Vue.js 3, Quasar Framework |
+| Bridge | Inertia.js |
+| Realtime | Pusher / Livewire |
+| Cơ sở dữ liệu | MySQL 8 |
+| Phong cách | Tailwind CSS |
+| Node.js | >= 18 |
 
-### Premium Partners
+## Hướng Dẫn Cài Đặt
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Yêu Cầu Hệ Thống
+- PHP >= 8.1
+- Composer
+- MySQL 8
+- Node.js >= 18
 
-## Contributing
+### Các Bước Khởi Tạo Dự Án Mới
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. **Clone hoặc fork template**
+   ```bash
+   git clone https://github.com/Flash-Dev-Team/laravel-inertia-quasar.git ten-du-an-moi
+   cd ten-du-an-moi
+   ```
 
-## Code of Conduct
+2. **Cài đặt dependencies**
+   ```bash
+   composer install
+   npm install
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+3. **Cấu hình môi trường**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-## Security Vulnerabilities
+4. **Cấu hình database trong file `.env`**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+5. **Chạy migrations**
+   ```bash
+   php artisan migrate --seed
+   ```
 
-## License
+6. **Khởi động môi trường phát triển**
+   ```bash
+   php artisan serve
+   npm run dev
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Liên Hệ
+
+Template được phát triển và duy trì bởi **Flash Dev Team**.  
+Mọi thắc mắc xin liên hệ qua [GitHub Issues](https://github.com/Flash-Dev-Team/laravel-inertia-quasar/issues).
